@@ -19,6 +19,7 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter mido tissot,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+<<<<<<< HEAD
 LOCAL_MODULE := vendor.display.color@1.0
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.display.color@1.0.so
@@ -31,6 +32,9 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libgpustats
+=======
+LOCAL_MODULE := libantradio
+>>>>>>> 08ee4583... msm8953-common: move libsdm-disp-apis to vendor
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libgpustats.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libgpustats.so
